@@ -1,14 +1,27 @@
 <script>
-    // import name-app from "./components/name-app.vue";
+    import AppHeader from './components/AppHeader.vue';
+    import AppMainTopSection from './components/AppMainTopSection.vue';
+    import AppMainMiddleSection from './components/AppMainMiddleSection.vue';
+    import AppMainBottomSection from './components/AppMainBottomSection.vue';
+    import AppFooter from './components/AppFooter.vue';
+
     export default{
-        // components: {
-        //     name-app,
-        // }
+        components: {
+            AppHeader,
+            AppMainTopSection,
+            AppMainMiddleSection,
+            AppMainBottomSection,
+            AppFooter
+        }
     }
 </script>
 
 <template>
-    <h1>Ciao Sono un titolo</h1>
+    <AppHeader></AppHeader>
+    <AppMainTopSection></AppMainTopSection>
+    <AppMainMiddleSection></AppMainMiddleSection>
+    <AppMainBottomSection></AppMainBottomSection>
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">
