@@ -3,9 +3,31 @@
         name: 'AppFooter',
         data (){
             return {
-                
-            }
-        },
+                socials:[
+                    {
+                        social: 'Facebook',
+                        icon: 'fa-brands fa-facebook-f d-flex jst-cntr algn-cntr'
+                    },
+                    {
+                        social: 'Twitter',
+                        icon: 'fa-brands fa-twitter d-flex jst-cntr algn-cntr'
+                    },
+                    {
+                        social: 'Youtube',
+                        icon: 'fa-brands fa-youtube d-flex jst-cntr algn-cntr'
+                    },
+                    {
+                        social: 'Pinterest',
+                        icon: 'fa-brands fa-pinterest-p d-flex jst-cntr algn-cntr'
+                    },
+                    {
+                        social: 'Maps',
+                        icon: 'fa-solid fa-location-dot d-flex jst-cntr algn-cntr'
+                    },
+                    ]
+                    
+                }
+            },
         methods: {
 
         },
@@ -21,21 +43,11 @@
             <button class="btn pointer">SIGN-UP NOW!</button>
             <div class="social-wrapper d-flex algn-cntr">
                 <span>FOLLOW US</span>
-                <a href="#" class="single-social">
-                    <i class="fa-brands fa-facebook-f d-flex jst-cntr algn-cntr"></i>
+                <!-- Single Social Template -->
+                <a v-for="social in socials" href="#" class="single-social">
+                    <i :class="social.icon"></i>
                 </a>
-                <a href="#" class="single-social">
-                    <i class="fa-brands fa-twitter d-flex jst-cntr algn-cntr"></i>
-                </a>
-                <a href="#" class="single-social">
-                    <i class="fa-brands fa-youtube d-flex jst-cntr algn-cntr"></i>
-                </a>
-                <a href="#" class="single-social">
-                    <i class="fa-brands fa-pinterest-p d-flex jst-cntr algn-cntr"></i>
-                </a>
-                <a href="#" class="single-social">
-                    <i class="fa-solid fa-location-dot d-flex jst-cntr algn-cntr"></i>
-                </a>
+                <!-- /Single Social Template -->
             </div>
         </div>
     </footer>
