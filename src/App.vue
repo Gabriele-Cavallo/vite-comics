@@ -26,4 +26,10 @@
 
 <style lang="scss">
     @use './style/generic';
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+    }
 </style>

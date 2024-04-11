@@ -10,7 +10,6 @@
 
         },
         mounted() {
-            alert('AppMainBottomSection');
         }
     }
    
