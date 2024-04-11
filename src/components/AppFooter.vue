@@ -18,24 +18,24 @@
 <template>
     <footer class="d-flex algn-cntr">
         <div class="container d-flex algn-cntr jst-btwn">
-            <button class="btn">SIGN-UP NOW!</button>
+            <button class="btn pointer">SIGN-UP NOW!</button>
             <div class="social-wrapper d-flex algn-cntr">
                 <span>FOLLOW US</span>
                 <a href="#" class="single-social">
                     <i class="fa-brands fa-facebook-f d-flex jst-cntr algn-cntr"></i>
-                </a href="#">
+                </a>
                 <a href="#" class="single-social">
                     <i class="fa-brands fa-twitter d-flex jst-cntr algn-cntr"></i>
-                </a href="#">
+                </a>
                 <a href="#" class="single-social">
                     <i class="fa-brands fa-youtube d-flex jst-cntr algn-cntr"></i>
-                </a href="#">
+                </a>
                 <a href="#" class="single-social">
                     <i class="fa-brands fa-pinterest-p d-flex jst-cntr algn-cntr"></i>
-                </a href="#">
+                </a>
                 <a href="#" class="single-social">
                     <i class="fa-solid fa-location-dot d-flex jst-cntr algn-cntr"></i>
-                </a href="#">
+                </a>
             </div>
         </div>
     </footer>

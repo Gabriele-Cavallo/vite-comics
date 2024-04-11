@@ -41,11 +41,11 @@
 <template>
     <section class="d-flex algn-cntr">
         <div class="container d-flex algn-cntr jst-btwn">
-            <div class="service-container d-flex jst-btwn">
-                <div v-for="service in services" class="services-wrapper d-flex algn-cntr">
+            <div class="service-container d-flex jst-btwn pointer">
+                <a href="#" v-for="service in services" class="services-wrapper d-flex algn-cntr">
                     <img :src="getImageUrl(service.image)" alt="Service">
                     <span>{{ service.title }}</span>
-                </div>
+                </a>
             </div>
         </div>
     </section>

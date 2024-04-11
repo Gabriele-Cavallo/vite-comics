@@ -48,7 +48,16 @@
             }
         },
         methods: {
-
+            activateSection(index){
+                if(!this.links[index].active){
+                    this.links[index].active = true;
+                }else{
+                    this.links[index].active = false;
+                }
+            },
+            deactivateSection(index){
+                this.links[index].active = false;
+            }
         },
         mounted() {
         }
@@ -64,7 +73,7 @@
             </div>
             <ul class="nav-bar d-flex algn-cntr">
                 <li class="anchor" v-for="link, index in links">
-                    <a class="d-flex algn-cntr" :class="{'active' : link.active}" href="#">{{ link.title }}</a>
+                    <a @click="activateSection(index)" @mouseleave="deactivateSection(index)" class="d-flex algn-cntr" :class="{'active' : link.active}" href="#">{{ link.title }}</a>
                 </li>
             </ul>
         </div>

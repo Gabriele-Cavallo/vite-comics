@@ -39,7 +39,11 @@
                 <div class="d-flex flex-col d-wrap">
                     <ul v-for="singleSection in section">
                         <h4>{{singleSection.title}}</h4>
-                        <li v-for="singleLink in singleSection.links">{{singleLink}}</li>
+                        <li v-for="singleLink in singleSection.links">
+                            <a href="#">
+                                {{singleLink}}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -79,6 +83,9 @@ img{
             font-weight: 400;
             color: grey;
             font-size: 16px;
+            a{
+                color: grey;
+            }
         }
     }
 }
