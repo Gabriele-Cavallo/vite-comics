@@ -41,9 +41,11 @@
 <template>
     <section class="d-flex algn-cntr">
         <div class="container d-flex algn-cntr jst-btwn">
-            <div v-for="service in services" class="services-wrapper d-flex algn-cntr">
-                <img :src="getImageUrl(service.image)" alt="Service">
-                <span>{{ service.title }}</span>
+            <div class="service-container d-flex jst-btwn">
+                <div v-for="service in services" class="services-wrapper d-flex algn-cntr">
+                    <img :src="getImageUrl(service.image)" alt="Service">
+                    <span>{{ service.title }}</span>
+                </div>
             </div>
         </div>
     </section>
@@ -57,14 +59,22 @@ section{
 }
 .container{
     padding: 80px;
+    .service-container{
+        width: 90%;
+        .services-wrapper{
+        gap: 10px;
+        color: white;
+        font-size: 14px;
+            span{
+                min-width: 105px;
+            }
+        }
+    }
 }
 img{
     max-height: 80px;
 }
-.services-wrapper{
-    gap: 10px;
-    color: white;
-    min-width: 255px;
-}
+
+
 
 </style>

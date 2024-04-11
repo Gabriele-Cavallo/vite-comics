@@ -17,8 +17,10 @@
 
 <template>
     <section>
-        <div class="container d-flex algn-cntr">
-            <h1>--> Content goes here <--</h1>
+        <div class="container">
+            <div class="container d-flex algn-cntr">
+                <h1>--> Content goes here <--</h1>
+            </div>
         </div>
     </section>
 </template>
