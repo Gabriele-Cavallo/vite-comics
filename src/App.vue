@@ -2,7 +2,7 @@
     import AppHeader from './components/AppHeader.vue';
     import AppMainTopSection from './components/AppMainTopSection.vue';
     import AppMainMiddleSection from './components/AppMainMiddleSection.vue';
-    import AppMainBottomSection from './components/AppMainBottomSection.vue';
+    import AppFooterTopSection from './components/AppFooterTopSection.vue';
     import AppFooter from './components/AppFooter.vue';
 
     export default{
@@ -10,7 +10,7 @@
             AppHeader,
             AppMainTopSection,
             AppMainMiddleSection,
-            AppMainBottomSection,
+            AppFooterTopSection,
             AppFooter
         }
     }
@@ -18,10 +18,14 @@
 
 <template>
     <AppHeader></AppHeader>
-    <AppMainTopSection></AppMainTopSection>
-    <AppMainMiddleSection></AppMainMiddleSection>
-    <AppMainBottomSection></AppMainBottomSection>
-    <AppFooter></AppFooter>
+    <main>
+        <AppMainTopSection></AppMainTopSection>
+        <AppMainMiddleSection></AppMainMiddleSection>
+    </main>
+    <footer>
+        <AppFooterTopSection></AppFooterTopSection>
+        <AppFooter></AppFooter>
+    </footer>
 </template>
 
 <style lang="scss">

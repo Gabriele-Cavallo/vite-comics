@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'AppMainBottomSection',
+        name: 'AppFooterTopSection',
         data (){
             return {
                 section: [

@@ -97,11 +97,9 @@ ul{
                 content: '';
                 position: absolute;
                 bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
+                left: 0;
                 background-color: $primary-color;
                 height: 5px;
-                margin-top: 100px;
                 width: 100%;
             }
             &.active{
