@@ -1,7 +1,7 @@
 <script>
     import AppHeader from './components/AppHeader.vue';
     import AppMainTopSection from './components/AppMainTopSection.vue';
-    import AppMainMiddleSection from './components/AppMainMiddleSection.vue';
+    import AppMainBottomSection from './components/AppMainBottomSection.vue';
     import AppFooterTopSection from './components/AppFooterTopSection.vue';
     import AppFooter from './components/AppFooter.vue';
 
@@ -9,7 +9,7 @@
         components: {
             AppHeader,
             AppMainTopSection,
-            AppMainMiddleSection,
+            AppMainBottomSection,
             AppFooterTopSection,
             AppFooter
         }
@@ -20,7 +20,7 @@
     <AppHeader></AppHeader>
     <main>
         <AppMainTopSection></AppMainTopSection>
-        <AppMainMiddleSection></AppMainMiddleSection>
+        <AppMainBottomSection></AppMainBottomSection>
     </main>
     <footer>
         <AppFooterTopSection></AppFooterTopSection>

@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'AppMainMiddleSection',
+        name: 'AppMainBottomSection',
         data (){
             return {
                 services: [
